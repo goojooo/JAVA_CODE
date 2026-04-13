@@ -11,6 +11,16 @@ public class RemoveIndexElement {
             list.add(i);
         }
 
-        System.out.println("List is ");
+        System.out.println("List is " + list);
+        System.out.println("Enter index to remove : ");
+
+        int loc = sc.nextInt();
+        if(loc >= 0 && loc < list.size())
+        {
+            list.remove(loc);
+            System.out.println("List is :-> " + list);
+        } else{
+            System.out.println("Error : No such index to remove...");
+        }
     }
 }
